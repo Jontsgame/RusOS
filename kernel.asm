@@ -219,18 +219,18 @@ ret
 ;Was muss f?r do_info in die Konsole geschrieben werden? Was soll geantwortet werden? Das regelt dieser Bereich hier :D
 
 ;Wichtigste Definierungen f?r die Shell
-welcome: db "GSSLOS v1.0",0x0A,0
-prompt_msg: db "[#] ",0
+welcome: db "RusOS - V0.3 Welcome user!",0x0A,0
+prompt_msg: db "[/root/console] ",0
 input_buffer: times 32 db 0
 
 ;Command Ein- und Ausgaben
 info_cmd: db "info",0
-info_msg: db "GotSSLOS written in pure ASM by @jontsgame with few tutorials from @gotssl. 2026",0x0A,0
+info_msg: db "RusOS V0.3.1 written in pure ASM by @jontsgame with few tutorials from @gotssl. 2026",0x0A,0
 cls_cmd: db "cls",0
 cls_msg: db "Terminal cleared",0x0A,0
 beep_cmd: db "beep",0
 why_cmd: db "why",0
-why_msg: db "Oh... you ask why? So... I don't know hehe :3",0x0A,0 ; I just do it because Low-Level coding makes fun :D or maybe it is just what programmers doing when they are depressed... learning Assembly and making an OS in it... NAHHHH just kidding I am not depressed I am just having so much fun seeing how my own OS fully written in Assembly grows :D also shoutout to that dude called @gotssl on YouTube, you are the best, thanks! Even if you are just having 2 tutorials, you helped me a lot! So... YOU ARE IN THE CREDTS YAYYYY :P",0x0A,0
+why_msg: db "Oh... you ask why? So... I don't know hehe :3",0x0A,0 ; I just do it because Low-Level coding makes fun :D also shoutout to that dude called @gotssl on YouTube, you are the best, thanks! Even if you are just having 2 tutorials, you helped me a lot! So... YOU ARE IN THE CREDTS YAYYYY :P
 sys_version: db "sys version",0
 sys_version_msg: db "System Up-to-date: Version: ",0x0A,0
 unknown_msg: db "Unknown command",0x0A,0
